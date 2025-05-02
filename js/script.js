@@ -45,7 +45,7 @@ function generatePasswords() {
 
     // Generate multiple password forms (you can adjust the number as needed)
     let outputHTML = '';
-    for (let i = 0; i < 3; i++) { // Generate 3 password fields
+
         const password = generatePassword(length, includeUppercase, includeLowercase, includeNumbers, includeSymbols);
         outputHTML += `
             <div class="password-container">
@@ -55,7 +55,7 @@ function generatePasswords() {
                 </button>
             </div>
         `;
-    }
+
 
     passwordOutputDiv.innerHTML = outputHTML;
 }

@@ -1,0 +1,32 @@
+.password-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.password-container input[type="text"] {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+/* Custom Styles for Full Height and Centering */
+html,
+body {
+    height: 80%;
+    margin: 0;
+}
+
+.full-height-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90%; /* Adjusted to leave space for footer */
+}
+
+main {
+    flex: 1; /* Allow main to grow and take available space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
