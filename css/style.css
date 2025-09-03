@@ -1,3 +1,41 @@
+/* Dark mode styles */
+.dark-mode {
+    background-color: #181818 !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .navbar,
+.dark-mode .footer,
+.dark-mode .bg-dark {
+    background-color: #222 !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .container,
+.dark-mode main {
+    background-color: #222 !important;
+    color: #f1f1f1 !important;
+}
+
+.dark-mode .form-control,
+.dark-mode .form-check-input,
+.dark-mode .form-range {
+    background-color: #333 !important;
+    color: #f1f1f1 !important;
+    border-color: #444 !important;
+}
+
+.dark-mode .btn,
+.dark-mode .btn-outline-secondary,
+.dark-mode .btn-outline-dark {
+    background-color: #333 !important;
+    color: #f1f1f1 !important;
+    border-color: #444 !important;
+}
+
+.dark-mode .progress {
+    background-color: #333 !important;
+}
 .password-container {
     display: flex;
     align-items: center;
@@ -10,10 +48,10 @@
 }
 
 /* Custom Styles for Full Height and Centering */
-html,
-body {
-    height: 80%;
+html, body {
+    height: 100%;
     margin: 0;
+    padding: 0;
 }
 
 .full-height-center {
@@ -21,12 +59,15 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 90%; /* Adjusted to leave space for footer */
+    min-height: 100vh;
+    width: 100vw;
+    box-sizing: border-box;
 }
 
 main {
-    flex: 1; /* Allow main to grow and take available space */
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100vw;
 }
